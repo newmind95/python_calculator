@@ -19,7 +19,7 @@ def evaluate_calculation():
     try:
         calculation = str(eval(calculation))
         text_field.delete(1.0, 'end')
-        # TODO: Trying to return int value if both  operands are integers.
+        # TODO: Trying to return intrhrt value if both  operands are integers.
         text_field.insert(1.0, calculation)
     except ZeroDivisionError:
         text_field.delete(1.0, 'end')
